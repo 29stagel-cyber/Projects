@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-camera><a-cursor></a-cursor></a-camera>
+        <a-scene>
+        <a-sky src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Black_Hole_Full.png"></a-sky>
+        <a-plane position="0 -4 0" rotation="-90 0 0" width="10" height="10000" src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Rainbow_colors_%28Modern_colours%29.png"></a-plane>
+        <a-sphere position="-20 20 -100" radius="10" color="lime"></a-sphere>
+        <a-sphere position="100 -10 50" radius="10" color="purple"></a-sphere>
+        <a-sphere position="-60 0 100" radius="10" color="red"></a-sphere>
+        <a-circle position="40 10 -400" rotation="0 0 0" radius=16 color="teal"></a-circle>
+        <a-circle position="40 10 386" rotation="0 180 0" radius=16 color="yellow"></a-circle>
+        <a-cylinder position="40 10 -400" rotation="-90 0 0" radius="4" height="16" color="silver"
+        animation="
+        property: position;
+        from: 40 10 -400;
+        to: 40 10 400;
+        loop: true;
+        dur: 15000;
+        "
+        ></a-cylinder>
+        <a-sphere position="40 10 -392" radius="4" color="silver"
+        animation="
+        property: position;
+        from: 40 10 -392;
+        to: 40 10 408;
+        loop: true;
+        dur: 15000;
+        "
+        ></a-sphere>
+        <a-cone position="40 10 -414" rotation="-90 0 0" radius-top="0" radius-bottom="3" height="12" color="orange"
+        animation="
+        property: position;
+        from: 40 10 -414;
+        to: 40 10 386;
+        loop: true;
+        dur: 15000;
+        "
+        ></a-cone>
+        ,
+        <!--a-torus  position="0 1 -20" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus>
+        <a-torus  position="0 1 -40" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus>
+        <a-torus  position="0 1 -60" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus>
+        <a-torus  position="0 1 -80" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus>
+        <a-torus  position="0 1 -100" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus>
+        <a-torus  position="0 1 -120" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus>
+        <a-torus  position="0 1 -140" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus>
+        <a-torus  position="0 1 -160" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus>
+        <a-torus  position="0 1 -180" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus>
+        <a-torus  position="0 1 -200" color="white" arc="360" radius="8" radius-tubular="0.25"></a-torus-->
+        </a-scene>
+    </body>
+</html>
